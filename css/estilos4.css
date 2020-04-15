@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+    background-image: url(../img/contacto.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+    background-image: url(../img/contacto.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    width: 40%;
+    height: 80%;
+    margin-left: 50px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0,0,0,0.8) 0px 0px 50px;
+    border-radius: 10px;
+    
+}
+
+input, textarea{
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 15px 0px;
+    width: 80%;
+    margin: 20px;
+    transition: all 300ms;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+input:focus, textarea:focus{
+    border-bottom-color: #610061 ;
+}
+
+
+button{
+    border: none;
+    outline: none;
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,0,255,1)), color-stop(17%, rgba(255,0,255,1)), color-stop(58%, rgba(176,0,176,1)), color-stop(100%, rgba(97,0,97,1)));
+    padding: 15px;
+    width: 200px;
+    color: white;
+    border-radius: 2px;
+    box-shadow: rgba(0,0,0,0.7) 0px 0px 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+button:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(0,0,0,0.9) 0px 0px 10px;
+}
+
+.usuario{
+    width: 100%;
+    height: 100%;
+}
+.tarjeta{
+    width: 100vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.tarjeta .margen .efects .datos .contacto .titulo{
+    margin-top: 100px;
+    font-size: 22px;
+    color: #2c3e50;
+}
+
+.tarjeta .margen .efects .datos .contacto .titulo_1{
+    margin-top: 10px;
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+.tit{
+    margin-top: 50px;
+    color: #2c3e50;
+    font-size: 22px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.contec{
+    color: #2c3e50;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.efects{
+    width: 400px;
+    height: 500px;
+    position: relative;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+    box-shadow:  0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+.margen{
+    margin: 10px;
+    perspective: 800;
+}
+.imagen,.datos{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.datos{
+    background: #f1f1f1;
+    transform: rotateY(180deg);
+}
+.margen:hover .efects{
+     transform: rotateY(180deg);
+}
+    
+/*header*/
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;    
+    margin-right: 10px;
+    
+}
+
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    color: #fff;
+}
